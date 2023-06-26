@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+    color: #f0ffff;
+    padding: 1rem;
+}
+
+path{
+    stroke: #f0ffff;
+}
+
+h2, svg {
+    font-size: 1.6rem;
+}
+
+h2 a,
+#cart--num {
+    color: #f0ffff;
+}
+
+
+#cart--num {
+    font-size: 1.6rem;
+    padding-right: 1rem;
+}

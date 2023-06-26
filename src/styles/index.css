@@ -1,0 +1,49 @@
+@import "../../node_modules/reset-css/reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+
+/* Styles de base */
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 1.9rem;
+    padding-bottom: 2rem !important;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+p, span, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ERROR PAGE */
+
+#error-page{
+    text-align: center;
+    padding: 12%;
+}
+
+#error-page i {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+/* LAYOUTS */
+
+.container{
+    padding: 2rem;
+}
+
+.card_container{
+    gap: 5%;
+}

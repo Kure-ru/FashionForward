@@ -1,0 +1,9 @@
+.container{
+    flex-direction: column;
+}
+
+.card_container a {
+max-width: 170px;
+}
+
+.card_container svg {display: none;}

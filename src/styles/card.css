@@ -1,0 +1,22 @@
+li{
+    list-style: none;
+    padding: 4%;
+    gap: 2rem;
+}
+
+h3{
+    padding: .3rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card__close{
+    cursor: pointer;
+}
+
+.card__close:hover{
+    color: gray;
+}
