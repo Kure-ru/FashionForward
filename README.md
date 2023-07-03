@@ -2,6 +2,8 @@
 
 ![preview FashionForward](public/assets/ezgif-3-4073f84f1d.gif)
 
+[Link to the project](https://shopping-cart-fd1hhw1k0-kure-ru.vercel.app)
+
 FashionForward is a shopping cart project built using React and JavaScript. It allows users to browse and select items, choose their preferred size, and add them to the cart. The checkout page displays the total price of the selected items, and the number of items in the cart is updated in real time.
 
 ## Technologies Used
