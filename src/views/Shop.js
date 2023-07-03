@@ -6,7 +6,7 @@ import "../styles/shop.css"
 
 export const Shop = () => {
   return (
-    <div className="container">
+    <main className="shop__container">
       <h1>La boutique</h1>
       <div className="card_container">
         {data.items.map((item) => (
@@ -20,6 +20,6 @@ export const Shop = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </main>
   );
 };

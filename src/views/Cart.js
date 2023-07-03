@@ -14,10 +14,9 @@ return itemPrice.price
   
 const totalPrice = pricesArray.reduce((prev, curr) => prev + curr, 0)
 
-console.log(totalPrice)
-
 if (cartItems.length > 0){
   return (
+    <main>
     <div className="cart">
     <h1>Mon panier</h1>
     <div className="cart__items">
@@ -29,6 +28,7 @@ if (cartItems.length > 0){
           subtitle={item.subtitle}
           price={item.price}
           size={item.size}
+          id ={item.id}
         />
       ))}
     </div>
@@ -47,9 +47,11 @@ if (cartItems.length > 0){
       <button ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">PAYER</a></button>
     </div>
   </div>
+  </main>
   )
 } else {
   return (
+    <main>
     <div className="cart">
     <h1>Mon panier</h1>
     <div className="cart__container">
@@ -57,6 +59,7 @@ if (cartItems.length > 0){
       <p><Link className="link" to={"/shop"}>Voir la boutique.</Link></p>
     </div>
     </div>
+    </main>
   )
 }
 

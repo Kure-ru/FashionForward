@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: rgb(52, 51, 51);
+
 }
 
 .container__img{
@@ -33,19 +35,24 @@ button, select, input {
 
 select, input{
     margin-left: 1rem;
+    color: rgb(52, 51, 51);
 }
 
 button {
     background: rgb(52, 51, 51);
-    color: white;
+    color: rgb(218, 207, 207);
     cursor: pointer;
     margin-top: 4rem;
 }
 
 button:hover{
-    background: rgb(254, 179, 39);
+    background: rgb(226, 220, 209);
+    color: black;
 }
 
+button:active{
+    transform: scale(1.1); 
+}
 
 @media (min-width: 700px) {
     .container {
@@ -53,5 +60,4 @@ button:hover{
         flex-direction: row;
         justify-content: center;
     }
-    
   }

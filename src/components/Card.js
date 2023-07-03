@@ -1,9 +1,15 @@
 import '../styles/card.css';
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { useContext } from 'react';
+import CartContext from '../context/CartContext';
 
 const Card = ({ id, source, title, price, size }) => {
-  const handleClick = () => {
-    console.log('clic')
+  const { setCartItems, cartItems } = useContext(CartContext);
+
+
+  const handleClick = (id) => {
+    const updatedCart = cartItems.filter((item) => item.id !== id)
+    setCartItems(updatedCart)
   }
   
   return (
@@ -14,7 +20,7 @@ const Card = ({ id, source, title, price, size }) => {
         {price && <p>{price} €</p>}
         {size && <p>Taille {size} </p>}
         </div>
-        <div onClick={handleClick} className='card__close'>
+        <div onClick={() => handleClick(id)} className='card__close'>
           <AiOutlineCloseCircle/>
         </div>
     </li>

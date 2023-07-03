@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+
 }
 
 h1{
@@ -39,7 +40,15 @@ p, span, button {
 }
 
 /* LAYOUTS */
+#root{
+    background: rgb(45, 45, 45);
+    min-height: 100dvh;
+}
 
+main {
+    margin: 0 2%;
+    background-color: rgb(235, 235, 235);
+}
 .container{
     padding: 2rem;
 }

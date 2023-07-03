@@ -8,7 +8,6 @@ export default function Root() {
   return (
     <CartProvider>
     <Nav/>
-      {/* all the other elements */}
       <div id="detail">
         <Outlet/>
       </div>

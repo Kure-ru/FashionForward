@@ -3,7 +3,7 @@ import "../styles/homepage.css";
 
 const Homepage = () => {
   return (
-    <>
+    <main>
       <section className="discount_container">
         <h1>JUSQU'À -30% DE REMISE SUPPLÉMENTAIRE SUR LES SOLDES!</h1>
         <p>C'est l'heure des soldes... </p>
@@ -22,7 +22,7 @@ const Homepage = () => {
           </Link>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

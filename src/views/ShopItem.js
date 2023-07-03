@@ -4,6 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import "../styles/shopitem.css";
 import { useState, useContext } from "react";
 import CartContext from "../context/CartContext";
+const generateUniqueId = require('generate-unique-id');
 
 function getItemById(id) {
   return data.items.find((item) => item.id === id);
@@ -20,8 +21,10 @@ export default function ShopItem() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(size){
+    const id = generateUniqueId();
     const newCartItem = {
-      id: itemId,
+      id: id,
       source: item.source,
       title: item.title,
       price: item.price,
@@ -30,10 +33,10 @@ export default function ShopItem() {
 
     setCartItems([...cartItems, newCartItem]);
     console.log(cartItems);
-  };
+  }};
 
   return (
-    <div className="container">
+    <main className="container" >
       <div>
         <img className="container__img" alt={item.title} src={item.source} />
       </div>
@@ -69,6 +72,6 @@ export default function ShopItem() {
           </button>
         </form>
       </div>
-    </div>
+    </main>
   );
 }
